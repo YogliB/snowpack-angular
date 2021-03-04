@@ -1,0 +1,23 @@
+{
+	"author": "YogliB <yogiboaron@gmail.com>",
+	"devDependencies": {
+		"lerna": "^4.0.0",
+		"prettier": "^2.2.1"
+	},
+	"license": "MIT",
+	"name": "snowpack-angular",
+	"prettier": {
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true
+	},
+	"private": true,
+	"repository": "git@github.com:YogliB/snowpack-angular.git",
+	"workspaces": [
+		"packages/*",
+		"templates/*"
+	],
+	"scripts": {
+		"postinstall": "ngcc"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"extends": "snowpack-plugin-angular/tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"styles/*": ["./public/styles/*"]
+		}
+	},
+	"angularCompilerOptions": {
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true,
+		"strictTemplates": true
+	}
+}

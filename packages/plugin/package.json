@@ -1,0 +1,41 @@
+{
+	"dependencies": {
+		"execa": "5.0.0",
+		"npm-run-path": "4.0.1"
+	},
+	"devDependencies": {
+		"prettier": "^2.2.1",
+		"snowpack": "^3.0.10"
+	},
+	"homepage": "https://github.com/YogliB/snowpack-plugin-angular#readme",
+	"keywords": [
+		"snowpack",
+		"angular",
+		"plugin"
+	],
+	"license": "MIT",
+	"main": "plugin.js",
+	"name": "snowpack-plugin-angular",
+	"peerDependencies": {
+		"@angular-devkit/build-optimizer": "~0.1102.0",
+		"@angular/compiler-cli": "^11.0.0",
+		"snowpack": ">= 2 <= 3"
+	},
+	"prettier": {
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"directory": "packages/plugin",
+		"type": "git",
+		"url": "git+https://github.com/YogliB/snowpack-angular.git"
+	},
+	"scripts": {
+		"format": "prettier . --write"
+	},
+	"version": "2.2.0"
+}

@@ -1,0 +1,45 @@
+{
+	"overrides": [
+		{
+			"extends": [
+				"plugin:@angular-eslint/recommended",
+				"plugin:@angular-eslint/template/process-inline-templates",
+				"prettier",
+				"prettier/@typescript-eslint"
+			],
+			"files": ["*.ts"],
+			"parserOptions": {
+				"createDefaultProgram": true,
+				"project": [
+					"tsconfig.app.json",
+					"tsconfig.spec.json",
+					"e2e/tsconfig.json"
+				]
+			},
+			"rules": {
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"prefix": "app",
+						"style": "kebab-case",
+						"type": "element"
+					}
+				],
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"prefix": "app",
+						"style": "camelCase",
+						"type": "attribute"
+					}
+				]
+			}
+		},
+		{
+			"extends": ["plugin:@angular-eslint/template/recommended"],
+			"files": ["*.html"],
+			"rules": {}
+		}
+	],
+	"root": true
+}

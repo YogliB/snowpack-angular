@@ -1,0 +1,22 @@
+{
+	"homepage": "https://github.com/YogliB/@snowpack-angular#readme",
+	"keywords": [
+		"snowpack",
+		"angular"
+	],
+	"license": "MIT",
+	"main": "snowpack.config.js",
+	"name": "@snowpack-angular/app-scripts",
+	"peerDependencies": {
+		"@snowpack-angular/plugin": "*"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"directory": "packages/app-scripts",
+		"type": "git",
+		"url": "git+https://github.com/YogliB/snowpack-angular.git"
+	},
+	"version": "0.0.0"
+}

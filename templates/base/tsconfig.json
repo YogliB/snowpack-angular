@@ -1,14 +1,14 @@
 {
-	"extends": "@snowpack-angular/plugin/tsconfig.json",
+	"extends": "@snowpack-angular/app-scripts/tsconfig.json",
+	"angularCompilerOptions": {
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true,
+		"strictTemplates": true
+	},
 	"compilerOptions": {
 		"baseUrl": "./",
 		"paths": {
 			"styles/*": ["./public/styles/*"]
 		}
-	},
-	"angularCompilerOptions": {
-		"strictInjectionParameters": true,
-		"strictInputAccessModifiers": true,
-		"strictTemplates": true
 	}
 }

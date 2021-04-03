@@ -17,8 +17,8 @@
 	"main": "plugin.js",
 	"name": "@snowpack-angular/plugin",
 	"peerDependencies": {
-		"@angular-devkit/build-optimizer": "~0.1102.0",
-		"@angular/compiler-cli": "^11.0.0",
+		"@angular-devkit/build-optimizer": ">= 0.900.0 <= ~0.1102.0",
+		"@angular/compiler-cli": ">= 9 <= 11",
 		"snowpack": ">= 2 <= 3"
 	},
 	"prettier": {

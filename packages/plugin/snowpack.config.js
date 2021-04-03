@@ -2,6 +2,6 @@
 module.exports = {
 	buildOptions: { clean: true },
 	mount: { public: '/' },
-	plugins: ['snowpack-plugin-angular'],
+	plugins: ['@snowpack-angular/plugin'],
 	routes: [{ match: 'routes', src: '.*', dest: '/index.html' }],
 };

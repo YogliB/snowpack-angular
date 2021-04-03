@@ -1,13 +1,13 @@
-# snowpack-plugin-angular
+# @snowpack-angular/plugin
 
--   Notice that This plugin is best used with [snowpack-template-angular](https://github.com/YogliB/snowpack-template-angular)
+-   Notice that This plugin is best used with [@snowpack-angular/template](https://github.com/YogliB/@snowpack-angular/template)
 
 When developing or building your site with Snowpack, this plugin will run Angular's [`ngc`](https://angular.io/guide/aot-compiler) CLI in your project and pipe the output through Snowpack.
 
 ## Usage
 
 ```bash
-npm i --save-dev snowpack-plugin-angular
+npm i --save-dev @snowpack-angular/plugin
 ```
 
 Then add the plugin to your Snowpack config:
@@ -16,7 +16,7 @@ Then add the plugin to your Snowpack config:
 // snowpack.config.js
 
 module.exports = {
-	plugins: ['snowpack-plugin-angular'],
+	plugins: ['@snowpack-angular/plugin'],
 };
 ```
 

@@ -1,6 +1,6 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-	extends: 'snowpack-plugin-angular/snowpack.config.js',
+	extends: '@snowpack-angular/plugin/snowpack.config.js',
 	alias: {
 		styles: './public/styles',
 	},

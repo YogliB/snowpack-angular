@@ -1,5 +1,5 @@
 {
-	"extends": "snowpack-plugin-angular/tsconfig.json",
+	"extends": "@snowpack-angular/plugin/tsconfig.json",
 	"compilerOptions": {
 		"baseUrl": "./",
 		"paths": {

@@ -32,7 +32,7 @@ function angularPlugin(_, { args } = {}) {
 	 * @type {import('snowpack').SnowpackPlugin}
 	 */
 	const plugin = {
-		name: 'snowpack-plugin-angular',
+		name: '@snowpack-angular/plugin',
 		async run({ isDev, log }) {
 			if (isDev) runNgc(args, log);
 

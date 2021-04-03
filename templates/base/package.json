@@ -38,7 +38,7 @@
 		"jest-preset-angular": "^8.3.2",
 		"prettier": "^2.0.5",
 		"snowpack": "^3.0.0",
-		"snowpack-plugin-angular": "^2.0.0",
+		"@snowpack-angular/plugin": "^2.0.0",
 		"typescript": "~4.0.2"
 	},
 	"jest": {
@@ -53,7 +53,7 @@
 		"angular"
 	],
 	"license": "MIT",
-	"name": "snowpack-template-angular",
+	"name": "@snowpack-angular/template",
 	"prettier": {
 		"singleQuote": true,
 		"tabWidth": 4,

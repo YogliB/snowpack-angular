@@ -15,7 +15,8 @@
 	"repository": "git@github.com:YogliB/snowpack-angular.git",
 	"scripts": {
 		"bootstrap": "lerna bootstrap",
-		"postinstall": "ngcc"
+		"postinstall": "ngcc",
+		"publish": "lerna publish"
 	},
 	"workspaces": [
 		"packages/*",

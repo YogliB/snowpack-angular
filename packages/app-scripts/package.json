@@ -8,7 +8,7 @@
 	"main": "snowpack.config.js",
 	"name": "@snowpack-angular/app-scripts",
 	"peerDependencies": {
-		"@snowpack-angular/plugin": "^1.0.0"
+		"@snowpack-angular/plugin": "^3.0.0"
 	},
 	"publishConfig": {
 		"access": "public"

@@ -1,6 +1,8 @@
 {
 	"author": "YogliB <yogiboaron@gmail.com>",
 	"devDependencies": {
+		"@angular/compiler": "~11.2.0",
+		"@angular/compiler-cli": "~11.2.0",
 		"lerna": "^4.0.0",
 		"prettier": "^2.2.1"
 	},

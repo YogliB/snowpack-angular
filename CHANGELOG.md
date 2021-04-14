@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changes
 
--   (template) - Remove `@angular/elements` package.
+-   (template) - Removed `@angular/elements` package & related code.
 
 ### Fixes
 

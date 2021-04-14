@@ -12,21 +12,6 @@ function dataListener(chunk, log) {
 	log('WORKER_MSG', { level: 'log', msg: `${stdOutput}` });
 }
 
-function runNgc(args, log) {
-	const { stdout, stderr } = commandSync(
-		`ngc ${args || '--project ./tsconfig.app.json'}`,
-		{
-			env: env(),
-			extendEnv: true,
-			windowsHide: false,
-			cwd,
-		}
-	);
-
-	if (stdout && stdout.trim()) dataListener(stdout, log);
-	if (stderr && stderr.trim()) dataListener(stderr, log);
-}
-
 function angularPlugin(_, { args } = {}) {
 	/**
 	 * @type {import('snowpack').SnowpackPlugin}
@@ -34,23 +19,21 @@ function angularPlugin(_, { args } = {}) {
 	const plugin = {
 		name: '@snowpack-angular/plugin',
 		async run({ isDev, log }) {
-			if (isDev) runNgc(args, log);
-
 			const workerPromise = command(
-				`ngc ${args || '--project ./tsconfig.app.json'} ${
-					isDev ? '--watch' : ''
-				}`,
+				`ngc ${args || '--project ./tsconfig.app.json'} && ngc ${
+					args || '--project ./tsconfig.app.json'
+				} ${isDev ? '--watch' : ''}`,
 				{
+					cwd,
 					env: env(),
 					extendEnv: true,
+					shell: true,
 					windowsHide: false,
-					cwd,
 				}
 			);
-			const { stdout, stderr } = workerPromise;
+			const { all } = workerPromise;
 
-			stdout && stdout.on('data', (chunk) => dataListener(chunk, log));
-			stderr && stderr.on('data', (chunk) => dataListener(chunk, log));
+			all && all.on('data', (chunk) => dataListener(chunk, log));
 
 			return workerPromise;
 		},

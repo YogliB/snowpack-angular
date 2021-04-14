@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changes
+
+-   (template) - Remove `@angular/elements` package.
+
+### Fixes
+
 -   (app-scripts) - Fixed peerDependencies versions.
 
 ## [3.0.0] - 2021-04-07

@@ -24,6 +24,7 @@ function angularPlugin(_, { args } = {}) {
 					args || '--project ./tsconfig.app.json'
 				} ${isDev ? '--watch' : ''}`,
 				{
+					all: true,
 					cwd,
 					env: env(),
 					extendEnv: true,
